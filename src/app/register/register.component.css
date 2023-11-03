@@ -1,0 +1,27 @@
+div,h1,img
+{
+    text-align: center;
+    padding: 10px;
+    
+}
+span
+{
+    color: red;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+label
+{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+}
+img{
+text-align: center;
+margin-left: 550px;
+height: 250px;;
+}
+hr
+{
+    border: 1px solid black;
+    width: 1000px;
+    margin-left: 200px;
+}

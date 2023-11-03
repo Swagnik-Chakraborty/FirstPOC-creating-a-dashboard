@@ -1,0 +1,31 @@
+
+<app-header></app-header>
+<nav>
+    <div>
+        <ul>
+
+            <li><a routerLink="maintainance" routerLinkActive="true">Welcome</a></li>
+        </ul>
+    </div>
+    <div>
+        <ul>
+
+            <li><a routerLink="feedback" routerLinkActive="true">Feedback</a></li>
+        </ul>
+    </div>
+    <div>
+        <ul>
+
+            <li><a routerLink="report" routerLinkActive="true">Report</a></li>
+        </ul>
+    </div>
+    <div class="sidebutton">
+
+     Hello {{username}} 
+    <button type="button" id="logout" class="btn btn-dark" (click)="logout()">Log Out</button>
+
+        
+    </div>
+</nav>
+<router-outlet></router-outlet>
+<app-footer></app-footer>

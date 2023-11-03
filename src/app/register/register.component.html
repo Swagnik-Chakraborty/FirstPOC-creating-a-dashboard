@@ -1,0 +1,62 @@
+
+<!-- <h1>Register</h1> -->
+<img src="assets/icon6.jpg" height="310px">
+<hr>
+<form [formGroup]="register" (ngSubmit)="Register()">
+    <div class="Fullname">
+        <label for="text"> Fullname:</label>
+        <input type="text" placeholder=" Enter Name" formControlName="fullname" >
+
+        <span *ngIf="f.fullname?.touched && f.fullname?.invalid">
+           <li> This input field is not valid.</li>
+        </span>
+    </div>
+    <div class="username">
+        <label for="email"> Username:</label>
+        <input type="text" placeholder=" Enter Username" formControlName="username" >
+
+        <span *ngIf="f.username?.touched && f.username?.invalid">
+          <li>  This input field is not valid.</li>
+        </span>
+    </div>
+    <div class="password">
+
+        <label for="Password">Password:</label>
+        <input type="password" placeholder=" Enter Password" formControlName="Password">
+
+        <span *ngIf="f.Password?.touched && f.Password?.invalid">
+           <li> This input field is not valid.</li>
+        </span>
+    </div>
+    <div class="email">
+
+        <label for="email">Email:</label>
+        <input type="email" placeholder=" Enter Email" formControlName="email">
+
+        <span *ngIf="f.email?.touched && f.email?.invalid">
+          <li>  This input field is not valid.</li>
+        </span>
+    </div>
+    <div class="confirmemail">
+
+        <label for="confirmemail">Confirm Email:</label>
+        <input type="email" placeholder=" Enter Confirm Email" formControlName="confirmemail">
+
+        <span *ngIf="f.confirmemail?.touched && f.confirmemail?.invalid ">
+            <li>This input field is not valid.</li>
+        </span>
+        <span *ngIf="register.errors?.['valuesnotmatch']">
+           <li> This input fields doesn't match</li>
+        </span>
+    </div>
+    <div class="check">
+        <input type="checkbox" formControlName="check"> I Accept all the terms and conditions.
+
+    </div>
+    <div class="submit">
+
+        <button [disabled]="register.invalid" (click)="Registernow(register.value)"> Register </button>
+
+    </div>
+
+</form>

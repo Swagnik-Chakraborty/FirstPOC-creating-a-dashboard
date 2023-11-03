@@ -1,0 +1,41 @@
+div,h1,img
+{
+    text-align: center;
+    padding: 10px;
+    
+}
+span
+{
+    color: red;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+label
+{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+}
+
+   .message
+   {
+    color: red;
+    font-family:'Courier New', Courier, monospace
+   } 
+
+/* form{
+    border-style: dotted dashed solid double;
+    border-width: 10px;
+} */
+/* form{
+    background-color:aliceblue
+    
+} */
+hr
+{
+    border: 1px solid black;
+    width: 1000px;
+    margin-left: 200px;
+}
+img
+{
+    height:300px;
+}

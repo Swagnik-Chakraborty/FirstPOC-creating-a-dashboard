@@ -1,0 +1,33 @@
+<div class="useradd">
+    <form [formGroup]="add" ngSubmit="adddata()">
+        <h1><u>User Maintainence-Add</u></h1>
+      
+        <div class="id">
+            <label for="userid">No:</label>
+            <input type="text" name="id" formControlName="No" placeholder="Enter No">
+        </div>
+        <div class="name">
+
+            <label for="userid">ID:</label>
+            <input type="text" name="name" formControlName="ID" placeholder="Enter ID">
+        </div>
+        <div class="rid">
+            <label for="userid">UserName:</label>
+            <input type="text" name="rid" formControlName="UserName" placeholder="Enter UserName">
+        </div>
+        <div class="rname">
+            <label for="userid">Status:</label>
+            <input type="text" name="rname" formControlName="Status" placeholder="Enter Status">
+        </div>
+        <div class="center">
+            <label for="userid">UserCreationDate:</label>
+            <input type="text" name="center" formControlName="UserCreationDate" placeholder="Enter The Creation Date">
+        </div>
+       
+        <div class="buttons">
+            <button type="button" class="confirm" (click)="Save()">Confirm</button>
+            <button type="button" class="cancel" (click)="reset()">Reset</button>
+
+        </div>
+    </form>
+</div>

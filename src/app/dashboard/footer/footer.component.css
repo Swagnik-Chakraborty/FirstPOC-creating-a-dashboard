@@ -1,0 +1,15 @@
+div{
+    background-color:azure;
+    font-family: 'Times New Roman', Times, serif;
+}
+h5
+{
+font-family:comic sans-serif;
+
+border: 1px solid;
+box-shadow: 5px 10px #888888;
+}
+#footer
+{
+    margin-top: 500px;
+}

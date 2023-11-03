@@ -1,0 +1,76 @@
+.user{
+    text-align: center;
+  
+   
+}
+table,th,td
+{
+    border:1px solid black;
+}
+table
+{
+    margin-left: 300px;
+   
+ 
+}
+#record
+{
+    color: red;
+}
+.inputs
+{
+    display: block;
+    padding: 10px;
+    white-space: pre;
+}
+.button
+{
+padding: 50px;
+
+
+}
+.button1
+{
+    margin-right: 30px;
+}
+label
+{
+    padding: 10px;
+    
+}
+.back{
+padding: 30px;
+margin-right: 600px;
+}
+h1
+{
+    margin-right: 550px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.inputs
+{
+    margin-right: 440px;
+}
+.button
+{
+    margin-right: 520px;
+}
+th,td
+{
+   
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 40px;
+}
+#delete
+{
+    
+    margin-top: 10px;
+}
+th
+{
+    background-color:gray;
+    color: aliceblue;
+}
+

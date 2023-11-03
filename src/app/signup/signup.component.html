@@ -1,0 +1,43 @@
+
+<div class="logo">
+
+  <img src="assets/icon5.jpg" height="400px">
+  
+   
+</div>
+<hr>
+<form [formGroup]="signup" (ngSubmit)="Signup()">
+  <div class="username">
+    <label for="username"> Username:</label>
+    <input type="text" placeholder=" Enter Name" id="username" formControlName="username" [ngModel]="user">
+
+    <span *ngIf="g.username?.touched && g.username?.invalid">
+      <li>This input field is not valid.</li>
+    </span>
+  </div>
+  <div class="password">
+
+    <label for="Password">Password:</label>
+    <input type="password" placeholder=" Enter  Password" id="password" formControlName="Password">
+
+    <span *ngIf="g.Password?.touched && g.Password?.invalid">
+      <li> The entered value is invalid.</li>
+
+    </span>
+  </div>
+  <div class="submit">
+
+    <button (click)="check(signup.get('username')?.value,signup.get('Password')?.value)" [disabled]="signup.invalid">
+      Submit </button>
+
+  </div>
+  <div class="message">
+    {{display}}
+  </div>
+
+  <div class="register">
+    New User? Join us with just a click!
+    <button  (click)="register()"> Register </button>
+
+  </div>
+</form>

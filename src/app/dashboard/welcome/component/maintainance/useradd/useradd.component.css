@@ -1,0 +1,33 @@
+.inputs
+{
+    padding: 10px;
+    
+}
+label{
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+}
+.useradd
+{
+    text-align: left;
+    margin-left: 280px;
+}
+
+.confirm
+{
+   
+    margin-left: 100px; 
+    margin-top: 10px;
+    margin-right: 50px;
+
+}
+h1
+{
+    text-align: left;
+    /* margin-left: 280px; */
+}
+.id,.name,.rname,.rid,.center
+{
+    display: flex;
+    padding: 20px;
+}
